@@ -1,5 +1,5 @@
 package friday.javaproject;
 
-public Class Student{
+public class Lecture{
 
 }
