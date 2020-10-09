@@ -1,6 +1,16 @@
 package friday.javaproject;
 
-public class Student {
+import java.util.ArrayList;
 
-    public double getAverageGrade(){ return 0; }
+public class Student {
+    ArrayList<Double> grades;
+
+    public double getAverageGrade(){
+        double sum = 0.0;
+        for(double num: this.grades){
+            sum += num;
+        }
+
+        return sum/grades.size();
+    }
 }

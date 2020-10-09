@@ -6,6 +6,11 @@ public class Lecture {
 
     private ArrayList<Student> students;
 
+    public void Enter(Student student) {
+
+    }
+ 
+
     public double getHighestAverageGrade(){
 
         double highest = 0.0;
@@ -18,5 +23,6 @@ public class Lecture {
 
         return highest;
     }
+
 
 }
