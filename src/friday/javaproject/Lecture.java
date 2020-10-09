@@ -1,23 +1,23 @@
 package friday.javaproject;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 public class Lecture {
 
-    private ArrayList<Student> students;
+    private HashSet <Student> students = new HashSet<>();
 
-    public void enter(Student student) {
+    public boolean enter(Student student) {
 
+        return this.students.add(student);
     }
  
 
     public double getHighestAverageGrade(){
-
         double highest = 0.0;
         for(Student student: this.students){
             double averageGrade = student.getAverageGrade();
 
-            highest = averageGrade > highest ? averageGrade : highest;
+            highest = Math.max(averageGrade, highest);
 
         }
 
