@@ -16,12 +16,13 @@ class LectureTest {
 
     void testGetHighestAverageGrade() {
         Lecture science = new Lecture();
+        Level level = Level.LEVEL100;
 
         double[] averages = {0,0,0};
 
 
         for(int i=0; i<3; i++){
-            Student student = new Student();
+            Student student = new Student(level);
             ArrayList<Double> grades = new ArrayList<>();
             double sum = 0.0;
             for(int j=0; j<5; j++){
@@ -48,7 +49,8 @@ class LectureTest {
     void testEnter() {
 
         Lecture math = new Lecture();
-        Student mike = new Student();
+        Level level = Level.LEVEL200;
+        Student mike = new Student(level);
 
         boolean isAccepted = math.enter(mike);
 
