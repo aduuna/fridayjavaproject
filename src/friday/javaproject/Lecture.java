@@ -2,7 +2,7 @@ package friday.javaproject;
 
 import java.util.ArrayList;
 
-public class Lecture{
+public class Lecture {
 
     private ArrayList<Student> students;
 
