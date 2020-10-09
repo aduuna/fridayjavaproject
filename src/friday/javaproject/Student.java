@@ -1,11 +1,12 @@
 package friday.javaproject;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Student {
     ArrayList<Double> grades;
 
-    public ArrayList<Double> getGrades() {
+    public ArrayList<Double> getGrades(List<Double> grade) {
         return grades;
     }
 
@@ -20,5 +21,8 @@ public class Student {
         }
 
         return sum/grades.size();
+    }
+
+    public void setGrades(List<Double> grade) {
     }
 }
