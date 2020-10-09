@@ -1,5 +1,7 @@
 package friday.javaproject;
 
+import java.util.ArrayList;
+
 public class Register {
 
     private Namable[] studentList;
@@ -9,7 +11,11 @@ public class Register {
     }
 
     String[] getRegister(){
-        return new String[]{""};
+        ArrayList<String> namesOfStudents = new ArrayList<>();
+        for (Namable student : this.studentList){
+            namesOfStudents.add(student.getName());
+        }
+        return (String[]) namesOfStudents.toArray();
     }
 
     String[] getRegisterByLevel(Level level){
