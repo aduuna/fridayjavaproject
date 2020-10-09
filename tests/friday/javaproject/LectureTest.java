@@ -1,7 +1,7 @@
 package friday.javaproject;
 
 import java.util.ArrayList;
-import java.util.HashSet; 
+import java.util.HashSet;
 import org.junit.jupiter.api.Test;
 
 
