@@ -1,10 +1,18 @@
 package friday.javaproject;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class Student {
-    ArrayList<Double> grades;
+public class Student implements Nameable, HasLevel {
+    private ArrayList<Double> grades;
+    public Level level;
+
+    public Student(Level level) {
+        this.level = level;
+    }
+
+    public Student(){
+
+    }
 
     public ArrayList<Double> getGrades() {
         return grades;
@@ -14,16 +22,16 @@ public class Student {
         this.grades = grades;
     }
 
-    public double getAverageGrade(){
+    public double getAverageGrade() {
         double sum = 0.0;
-        for(double num: this.grades){
+        for (double num : this.grades) {
             sum += num;
         }
 
-        return sum/grades.size();
+        return sum / grades.size();
     }
 
-    String getName(){
+    public String getName() {
         return "";
     }
 }
