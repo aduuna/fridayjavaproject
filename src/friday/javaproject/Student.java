@@ -1,6 +1,7 @@
 package friday.javaproject;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Student implements HasLevel, Namable {
     ArrayList<Double> grades;
@@ -10,7 +11,7 @@ public class Student implements HasLevel, Namable {
         this.level = level;
     }
 
-    public ArrayList<Double> getGrades() {
+    public ArrayList<Double> getGrades(List<Double> grade) {
         return grades;
     }
 
