@@ -3,8 +3,13 @@ package friday.javaproject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Student {
+public class Student implements HasLevel, Namable {
     ArrayList<Double> grades;
+    private Level level;
+
+    public Student(Level level) {
+        this.level = level;
+    }
 
     public ArrayList<Double> getGrades(List<Double> grade) {
         return grades;
@@ -23,6 +28,4 @@ public class Student {
         return sum/grades.size();
     }
 
-    public void setGrades(List<Double> grade) {
-    }
 }

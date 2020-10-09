@@ -2,12 +2,12 @@ package friday.javaproject;
 
 public interface HasLevel {
 
-    Level level [] = Level.values();
+    Level level = null;
 
-     public default Level[] getLevel() {
+     public default Level getLevel() {
          return level;
      }
 
-    
+
 
 }
