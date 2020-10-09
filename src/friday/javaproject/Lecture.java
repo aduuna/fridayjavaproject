@@ -6,7 +6,7 @@ public class Lecture {
 
     private ArrayList<Student> students;
 
-    public void Enter(Student student) {
+    public void enter(Student student) {
 
     }
  
